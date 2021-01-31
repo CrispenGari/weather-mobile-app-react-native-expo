@@ -10,7 +10,7 @@ This is a simple `REACT NATIVE` MOBILE APP using `expo` that give you the curren
 
 ### 2. Cold Day [Temperature less than 16 * C]
 
-![alt-text](https://github.com/CrispenGari/job-finder-mobile-app/blob/main/Screenshot_20210127-211214_Expo.jpg)
+![alt-text](https://github.com/CrispenGari/weather-mobile-app-react-native-expo/blob/main/Screenshot_20210131-125213_Expo.jpg)
 
 ## This application is using
 
