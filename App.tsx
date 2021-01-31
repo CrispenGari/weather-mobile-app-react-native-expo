@@ -1,21 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useState } from "react";
+import { Text, View, ImageBackground } from "react-native";
 
-export default function App() {
+import styles from "./AppStyles";
+import { Weather, Temp } from "./components";
+const hot = require("./assets/hot.jpg");
+const cold = require("./assets/cold.jpg");
+
+const App = () => {
+  const [background, setBackground] = useState(cold);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.app}>
+      <ImageBackground source={background} style={styles.app__main}>
+        <Weather setBackground={setBackground} />
+      </ImageBackground>
     </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
+export default App;
